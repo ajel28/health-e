@@ -1,0 +1,2 @@
+# EAA MidyearProject-24-25 Health E
+ Welcome to our Mid-Year project: Health-e! Health-e is a website dedicated to giving its users the best information about what exercises are optimal for each muscle. Novices and seasoned veterans alike can come to our website to learn more about the best way to build their bodies. With a questioning section, and perhaps even an AI, Health-e will strive to give the best and most efficient experience.
