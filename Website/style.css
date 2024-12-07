@@ -128,6 +128,7 @@
         align-items: start;
         background-color: #f9f9f9;
         width: 1000px;
+        transition: height 1.5s;
         height: 200px;
         border-radius: 10px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -193,66 +194,92 @@
 
       /* START OF HYPERTROPHY INTRO */
 
-      .mainMuscleGroups{
+      .mainMuscleGroups {
         margin: 40px 0px 0px 40px;
       }
 
-      .mainHypertrophy{
-        display: flex;
+      .mainHypertrophy {
+        display: block;
         justify-content: space-between;
-        width:100%;
+        width: 100%;
       }
-      
-      .mainHypertrophy p{
-        position:relative;
-        color:white;
+
+      .firstRow,
+      .secondRow {
+        display: flex;
+      }
+
+      .mainHypertrophy p {
+        position: relative;
+        color: white;
         text-align: center;
-        margin-top:50px;
+        margin-top: 50px;
         margin-right: 20px;
         margin-left: 20px;
-        font-size:1.2rem;
+        font-size: 1.4rem;
         z-index: 2;
       }
 
-      .chest, .shoulders, .triceps{
+      .chest,
+      .shoulders,
+      .triceps,
+      .traps, .back, .biceps {
         background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
         border-radius: 10px;
         width: 100%;
         max-width: 400px;
-        height: 300px;
+        transition: height 1.5s;
+        height: 100px;
         background-repeat: no-repeat;
         background-size: cover;
         margin-right: 20px;
         position: relative;
         box-shadow: 4px 0px 4px 0px;
+        overflow: hidden;
       }
 
-      .chest::before, .shoulders::before, .triceps::before{
+      .chest:hover,
+      .shoulders:hover,
+      .triceps:hover,
+      .traps:hover, .back:hover, .biceps:hover{
+        height: 400px;
+        transition: height 2s;
+      }
+
+      .chest::before,
+      .shoulders::before,
+      .triceps::before,
+      .traps::before, .back::before, .biceps::before {
         z-index: 1;
         content: '';
         position: absolute;
-        width:400px;
-        height:300px;
+        width: 400px;
+        height: 400px;
         background-color: rgba(0, 0, 0, 0.501);
         border-radius: 10px;
       }
 
-      .shoulders{
+      .shoulders {
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/man-training-with-dumbbells-royalty-free-image-1700823785.jpg");
       }
 
-      .shoulders p{
-        font-size: 1rem;
-      }
-
-      .triceps{
-        margin-right:5%;
+      .triceps {
+        margin-right: 5%;
         background-image: url("https://prorganiq.com/cdn/shop/articles/medial-tricep-head-exercises.jpg");
       }
 
-      .triceps p{
-        font-size: 1rem;
+      .traps {
+        margin-top: 50px;
+        background-image: url("https://www.muscletech.com/cdn/shop/articles/MT-Traps-Workout-900x675.jpg?v=1731102659")
       }
 
+      .back{
+        margin-top:50px;
+        background-image: url("https://media.istockphoto.com/id/1028271392/photo/muscular-man-training-his-back.jpg?s=612x612&w=0&k=20&c=osNOzRBERLXKCG6Ugcr8uOdNBICFnolYixDE8S28M08=");
+      }
 
-
+      .biceps{
+        margin-top:50px;
+        margin-right:5%;
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/fit-chinese-guy-practicing-with-dumbbells-in-gym-royalty-free-image-1610380612.?crop=0.668xw:1.00xh;0,0&resize=1200:*");
+      }
