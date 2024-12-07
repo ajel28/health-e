@@ -32,7 +32,7 @@
         display: inline;
         padding-left: 70px;
         padding-right: 70px;
-        padding-bottom: 39px;
+        padding-bottom: 38px;
         padding-top: 39px;
       }
 
@@ -112,11 +112,11 @@
         color: white;
       }
 
-/* THIS IS THE ANATOMY SECION */
+      /* THIS IS THE ANATOMY SECION */
 
-      .mainAnatomy{
+      .mainAnatomy {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
       }
 
       .hypertrophyContainer,
@@ -136,8 +136,8 @@
 
       .hypertrophyContainer:hover,
       .strengthContainer:hover,
-      .enduranceContainer:hover{
-        height:400px;
+      .enduranceContainer:hover {
+        height: 400px;
         transition: height 2s;
       }
 
@@ -151,6 +151,11 @@
         font-size: 1.4rem;
         line-height: 2rem;
         margin-top: 50px;
+      }
+
+      .muscleGrowthContainer a {
+        text-decoration: none;
+        color: black;
       }
 
       .hypertrophyContainer img {
@@ -169,19 +174,85 @@
         margin-right: 20px;
       }
 
-      .bodyTypeContainer{
+      .bodyTypeContainer {
         background-color: #f9f9f9;
         width: 20%;
-        color:black;
+        color: black;
         border-radius: 10px;
-        padding:20px;
+        padding: 20px;
         font-size: 0.9rem;
         margin-top: 20px;
       }
-      
-      .bodyTypeContainer a{
+
+      .bodyTypeContainer a {
         text-decoration: none;
         color: tomato;
         text-align: center;
-        font-size:1.5rem;
+        font-size: 1.5rem;
       }
+
+      /* START OF HYPERTROPHY INTRO */
+
+      .mainMuscleGroups{
+        margin: 40px 0px 0px 40px;
+      }
+
+      .mainHypertrophy{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+      }
+      
+      .mainHypertrophy p{
+        position:relative;
+        color:white;
+        text-align: center;
+        margin-top:50px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size:1.2rem;
+        z-index: 2;
+      }
+
+      .chest, .shoulders, .triceps{
+        background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 20px;
+        position: relative;
+        box-shadow: 4px 0px 4px 0px;
+      }
+
+      .chest::before, .shoulders::before, .triceps::before{
+        z-index: 1;
+        content: '';
+        position: absolute;
+        width:400px;
+        height:300px;
+        background-color: rgba(0, 0, 0, 0.501);
+        border-radius: 10px;
+      }
+
+      .shoulders{
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/man-training-with-dumbbells-royalty-free-image-1700823785.jpg");
+      }
+
+      .shoulders p{
+        font-size: 1rem;
+      }
+
+      .triceps{
+        margin-right:5%;
+        background-image: url("https://prorganiq.com/cdn/shop/articles/medial-tricep-head-exercises.jpg");
+      }
+
+      .triceps p{
+        font-size: 1rem;
+      }
+
+
+
