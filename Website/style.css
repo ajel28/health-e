@@ -3,6 +3,12 @@
           margin: auto;
       }
 
+      p{
+        line-height: 1.7rem;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+
       .headerContainer {
           color: white;
           display: flex;
@@ -34,6 +40,7 @@
         height:62%;
         z-index:1;
       }
+
       .centered {
         position: absolute;
         top: 50%;
@@ -54,11 +61,27 @@
         border-radius: 20px;
         color:white;
       }
-
-      main {
-          /* pass */
+      
+      main{
+        margin: 30px;
       }
 
+      .mainTextContainer{
+        margin-left: 0px;
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+      
       footer {
-          /* pass */
+          padding:3px;
+          background-color: grey;
+          width:100%;
+          height:90px;
+      }
+
+      footer p{
+        margin-top:30px;
+        margin-left: 30px;
+        color: white;
       }
