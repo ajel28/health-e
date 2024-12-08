@@ -3,6 +3,10 @@
         margin: auto;
       }
 
+      body{
+        overflow-x: hidden;
+      }
+
       p {
         line-height: 1.7rem;
         margin-top: 20px;
@@ -199,14 +203,17 @@
       }
 
       .mainHypertrophy {
+        margin-top:50px;
+        margin-bottom:110px;
         display: block;
         justify-content: space-between;
         width: 100%;
       }
 
       .firstRow,
-      .secondRow {
+      .secondRow, .thirdRow {
         display: flex;
+        width:100%;
       }
 
       .mainHypertrophy p {
@@ -223,7 +230,7 @@
       .chest,
       .shoulders,
       .triceps,
-      .traps, .back, .biceps {
+      .traps, .back, .biceps, .forearms, .legs, .abdominals {
         background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
         border-radius: 10px;
         width: 100%;
@@ -241,7 +248,7 @@
       .chest:hover,
       .shoulders:hover,
       .triceps:hover,
-      .traps:hover, .back:hover, .biceps:hover{
+      .traps:hover, .back:hover, .biceps:hover, .forearms:hover, .legs:hover, .abdominals:hover{
         height: 400px;
         transition: height 2s;
       }
@@ -249,7 +256,7 @@
       .chest::before,
       .shoulders::before,
       .triceps::before,
-      .traps::before, .back::before, .biceps::before {
+      .traps::before, .back::before, .biceps::before, .forearms::before,.legs::before, .abdominals::before {
         z-index: 1;
         content: '';
         position: absolute;
@@ -283,3 +290,30 @@
         margin-right:5%;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/fit-chinese-guy-practicing-with-dumbbells-in-gym-royalty-free-image-1610380612.?crop=0.668xw:1.00xh;0,0&resize=1200:*");
       }
+
+      .forearms{
+        margin-top:50px;
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/gym-workout-weight-training-bodybuilding-muscular-royalty-free-image-1703160802.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*");
+      }
+
+      .legs{
+        margin-top:50px;
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/young-man-training-on-a-leg-machine-in-the-gym-royalty-free-image-1701168283.jpg");
+      }
+
+      .abdominals{
+        margin-top:50px;
+        margin-right:5%;
+        background-image: url("https://thumbs.dreamstime.com/b/bodybuilder-training-man-crunches-fitness-workout-core-strength-guy-endurance-sports-athlete-abs-muscle-power-health-344022068.jpg");
+      }
+
+      .hypertrophyIntro{
+        padding:20px;
+        color:black !important;
+        font-size: 2.3rem !important;
+        line-height: 2.7rem;
+        margin-top:100px;
+        padding-bottom: 0 !important;
+      }
+
+      
