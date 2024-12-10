@@ -350,11 +350,11 @@
         font-size:1.7rem;
       }
 
-      .mythsFlex {
+      .bodyTypeListFlex {
         display:flex;
       }
 
-      .myths img{
+      .bodyTypeList img{
         display:flex;
         margin-left:470px;
         margin-top:20px;
