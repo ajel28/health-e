@@ -34,6 +34,15 @@
         margin-left: 50px;
       }
 
+      .logo p {
+        margin-top: -25px;
+        margin-right: 50px;
+        padding-top: 51px;
+        padding-bottom: 36px;
+        padding-left: 50px;
+        padding-right: 30px;
+      }
+
       nav ul li {
         display: inline;
         padding-left: 50px;
@@ -375,4 +384,3 @@
         text-align: center;
         margin-bottom: 40px;
       }
-      
