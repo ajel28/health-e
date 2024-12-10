@@ -91,7 +91,7 @@
         color: lightgray;
       }
 
-      main {
+      .mainStart {
         margin: 20px;
         display: flex;
         margin-bottom: 50px;
@@ -185,26 +185,24 @@
         color: black;
         border-radius: 10px;
         padding: 20px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-top: 20px;
       }
 
       .bodyTypeContainer a {
         text-decoration: none;
         color: tomato;
-        text-align: center;
-        font-size: 1.5rem;
       }
 
-      /* START OF HYPERTROPHY INTRO */
+      /* START OF HYPERTROPHY INTRO / STRENGTH INTRO */
 
-      .mainMuscleGroups {
+      .mainMuscleGroups{
         margin: 40px 0px 0px 40px;
       }
 
-      .mainHypertrophy {
+      .mainHypertrophy, .mainStrength, .mainEndurance {
         margin-top:50px;
-        margin-bottom:110px;
+        margin-bottom:60px;
         display: block;
         justify-content: space-between;
         width: 100%;
@@ -216,7 +214,7 @@
         width:100%;
       }
 
-      .mainHypertrophy p {
+      .mainHypertrophy p, .mainStrength p, .mainEndurance p{
         position: relative;
         color: white;
         text-align: center;
@@ -307,13 +305,57 @@
         background-image: url("https://thumbs.dreamstime.com/b/bodybuilder-training-man-crunches-fitness-workout-core-strength-guy-endurance-sports-athlete-abs-muscle-power-health-344022068.jpg");
       }
 
-      .hypertrophyIntro{
+      .hypertrophyIntro, .strengthIntro, .enduranceIntro{
         padding:20px;
+        text-align: center;
         color:black !important;
-        font-size: 2.3rem !important;
+        font-size: 2.2rem !important;
         line-height: 2.7rem;
-        margin-top:100px;
+        margin-top:20px;
         padding-bottom: 0 !important;
       }
 
+      /* THIS IS THE BEGINNING OF BODY TYPES */
+
+      .bodyTypesMain h2{
+        margin-top:60px;
+        margin-left:40px;
+      }
+
+      .bodyTypeHeader{
+        margin: 0px 0px 0px 40px;
+      }
+
+      .bodyTypeHeader01{
+        margin-top:40px;
+        margin-left:40px;
+        font-size: 3rem;
+      }
+
+      .bodyTypesMain img{
+        margin-right:150px;
+      }
+      
+      .bodyTypesMain p{
+        margin-left:80px;
+        font-size: 1.1rem;
+        margin-right:90px;
+        margin-bottom:30px;
+        line-height: 2rem;
+      }
+
+      .bodyTypesMain li{
+        margin-top:10px;
+        margin-left:60px;
+        font-size:1.7rem;
+      }
+
+      .geneticsFlex {
+        display:flex;
+      }
+
+      .genetics img{
+        margin-left:60px;
+        margin-top:20px;
+      }
       
