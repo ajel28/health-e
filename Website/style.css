@@ -3,7 +3,7 @@
         margin: auto;
       }
 
-      body{
+      body {
         overflow-x: hidden;
       }
 
@@ -25,6 +25,7 @@
         background-color: #ff6347;
         width: 100%;
         height: 110px;
+
 
       }
 
@@ -207,25 +208,30 @@
 
       /* START OF HYPERTROPHY INTRO / STRENGTH INTRO */
 
-      .mainMuscleGroups{
+      .mainMuscleGroups {
         margin: 40px 0px 0px 40px;
       }
 
-      .mainHypertrophy, .mainStrength, .mainEndurance {
-        margin-top:50px;
-        margin-bottom:60px;
+      .mainHypertrophy,
+      .mainStrength,
+      .mainEndurance {
+        margin-top: 50px;
+        margin-bottom: 60px;
         display: block;
         justify-content: space-between;
         width: 100%;
       }
 
       .firstRow,
-      .secondRow, .thirdRow {
+      .secondRow,
+      .thirdRow {
         display: flex;
-        width:100%;
+        width: 100%;
       }
 
-      .mainHypertrophy p, .mainStrength p, .mainEndurance p{
+      .mainHypertrophy p,
+      .mainStrength p,
+      .mainEndurance p {
         position: relative;
         color: white;
         text-align: center;
@@ -239,7 +245,12 @@
       .chest,
       .shoulders,
       .triceps,
-      .traps, .back, .biceps, .forearms, .legs, .abdominals {
+      .traps,
+      .back,
+      .biceps,
+      .forearms,
+      .legs,
+      .abdominals {
         background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
         border-radius: 10px;
         width: 100%;
@@ -257,7 +268,12 @@
       .chest:hover,
       .shoulders:hover,
       .triceps:hover,
-      .traps:hover, .back:hover, .biceps:hover, .forearms:hover, .legs:hover, .abdominals:hover{
+      .traps:hover,
+      .back:hover,
+      .biceps:hover,
+      .forearms:hover,
+      .legs:hover,
+      .abdominals:hover {
         height: 400px;
         transition: height 2s;
       }
@@ -265,7 +281,12 @@
       .chest::before,
       .shoulders::before,
       .triceps::before,
-      .traps::before, .back::before, .biceps::before, .forearms::before,.legs::before, .abdominals::before {
+      .traps::before,
+      .back::before,
+      .biceps::before,
+      .forearms::before,
+      .legs::before,
+      .abdominals::before {
         z-index: 1;
         content: '';
         position: absolute;
@@ -289,98 +310,108 @@
         background-image: url("https://www.muscletech.com/cdn/shop/articles/MT-Traps-Workout-900x675.jpg?v=1731102659")
       }
 
-      .back{
-        margin-top:50px;
+      .back {
+        margin-top: 50px;
         background-image: url("https://media.istockphoto.com/id/1028271392/photo/muscular-man-training-his-back.jpg?s=612x612&w=0&k=20&c=osNOzRBERLXKCG6Ugcr8uOdNBICFnolYixDE8S28M08=");
       }
 
-      .biceps{
-        margin-top:50px;
-        margin-right:5%;
+      .biceps {
+        margin-top: 50px;
+        margin-right: 5%;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/fit-chinese-guy-practicing-with-dumbbells-in-gym-royalty-free-image-1610380612.?crop=0.668xw:1.00xh;0,0&resize=1200:*");
       }
 
-      .forearms{
-        margin-top:50px;
+      .forearms {
+        margin-top: 50px;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/gym-workout-weight-training-bodybuilding-muscular-royalty-free-image-1703160802.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*");
       }
 
-      .legs{
-        margin-top:50px;
+      .legs {
+        margin-top: 50px;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/young-man-training-on-a-leg-machine-in-the-gym-royalty-free-image-1701168283.jpg");
       }
 
-      .abdominals{
-        margin-top:50px;
-        margin-right:5%;
+      .abdominals {
+        margin-top: 50px;
+        margin-right: 5%;
         background-image: url("https://thumbs.dreamstime.com/b/bodybuilder-training-man-crunches-fitness-workout-core-strength-guy-endurance-sports-athlete-abs-muscle-power-health-344022068.jpg");
       }
 
-      .hypertrophyIntro, .strengthIntro, .enduranceIntro{
-        padding:20px;
+      .hypertrophyIntro,
+      .strengthIntro,
+      .enduranceIntro {
+        padding: 20px;
         text-align: center;
-        color:black !important;
+        color: black !important;
         font-size: 2.2rem !important;
         line-height: 2.7rem;
-        margin-top:20px;
+        margin-top: 20px;
         padding-bottom: 0 !important;
       }
 
       /* THIS IS THE BEGINNING OF BODY TYPES */
 
-      .bodyTypesMain h2{
-        margin-top:60px;
-        margin-left:40px;
+      .bodyTypesMain h2 {
+        margin-top: 60px;
+        margin-left: 40px;
       }
 
-      .bodyTypeHeader{
+      .bodyTypeHeader {
         margin: 0px 0px 0px 40px;
       }
 
-      .bodyTypeHeader01{
-        margin-top:40px;
-        margin-left:40px;
+      .bodyTypeHeader01 {
+        margin-top: 40px;
+        margin-left: 40px;
         font-size: 3rem;
       }
 
-      .bodyTypesMain img{
-        margin-right:150px;
+      .bodyTypesMain img {
+        margin-right: 150px;
       }
-      
-      .bodyTypesMain p{
-        margin-left:80px;
+
+      .bodyTypesMain p {
+        margin-left: 80px;
         font-size: 1.1rem;
-        margin-right:90px;
-        margin-bottom:30px;
+        margin-right: 90px;
+        margin-bottom: 30px;
         line-height: 2rem;
       }
 
-      .bodyTypesMain li{
-        margin-top:10px;
-        margin-left:60px;
-        font-size:1.7rem;
+      .bodyTypesMain li {
+        margin-top: 10px;
+        margin-left: 60px;
+        font-size: 1.7rem;
       }
 
       .bodyTypeListFlex {
-        display:flex;
+        display: flex;
       }
 
-      .bodyTypeList img{
-        display:flex;
-        margin-left:470px;
-        margin-top:20px;
-        width:500px;
+      .bodyTypeList img {
+        display: flex;
+        margin-left: 470px;
+        margin-top: 20px;
+        width: 500px;
       }
 
-      iframe{
-        display:flex;
+      .bodyTypeListText li {
+        font-size: 0.8rem;
+      }
+
+      iframe {
+        display: flex;
         border-radius: 10px;
         align-items: center;
-        margin-top:30px;
+        margin-top: 30px;
       }
 
-      .bodyTypesMain a h1{
-        color:tomato;
+      .bodyTypesMain a h1 {
+        color: tomato;
         text-align: center;
         margin-bottom: 40px;
+      }
+
+      .bodyTypeListText li{
+       font-size:0.9rem;
       }
