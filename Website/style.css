@@ -46,8 +46,9 @@
 
       nav ul li {
         display: inline;
-        padding-left: 50px;
-        padding-right: 90px;
+        text-align: center;
+        padding-left: 70px;
+        padding-right: 70px;
         padding-bottom: 38px;
         padding-top: 39px;
       }
