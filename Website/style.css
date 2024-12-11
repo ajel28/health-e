@@ -377,6 +377,7 @@
         margin-right: 90px;
         margin-bottom: 30px;
         line-height: 2rem;
+        margin-top:40px;
       }
 
       .bodyTypesMain li {
@@ -385,7 +386,7 @@
         font-size: 1.7rem;
       }
 
-      .bodyTypeListFlex {
+      .bodyTypeListFlex, .bodyTypeListFlexMI {
         display: flex;
       }
 
@@ -396,8 +397,9 @@
         width: 500px;
       }
 
-      .bodyTypeListText li {
-        font-size: 0.8rem;
+      .bodyTypeListText ul{
+        margin-bottom:40px;
+        margin-right:100px;
       }
 
       iframe {
@@ -414,5 +416,13 @@
       }
 
       .bodyTypeListText li{
-       font-size:0.9rem;
+       font-size:1rem;
+       padding:5px;
       }
+
+      .bodyTypeListFlexMI img{
+        margin-right:70px;
+        width:550px;
+      }
+      
+      
