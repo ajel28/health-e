@@ -387,7 +387,7 @@
         font-size: 1.7rem;
       }
 
-      .bodyTypeListFlex, .bodyTypeListFlexMI {
+      .bodyTypeListFlex, .bodyTypeListFlexMI, .bodyTypeListFlexProteins {
         display: flex;
       }
 
@@ -448,4 +448,17 @@
 
       .question input {
         height: 173px;
+      }
+
+      .bodyTypeListFlexProteins img{
+        margin-right:0px;
+      }
+
+      .bodyTypeListFlexBMI{
+        display: flex;
+      }
+
+      .bodyTypeListFlexBMI img{
+        width:500px;
+        margin-right:50px;
       }
