@@ -453,3 +453,12 @@
       .bodyTypeListFlexProteins img{
         margin-right:0px;
       }
+
+      .bodyTypeListFlexBMI{
+        display: flex;
+      }
+
+      .bodyTypeListFlexBMI img{
+        width:500px;
+        margin-right:50px;
+      }
