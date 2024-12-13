@@ -419,7 +419,7 @@
         font-size: 1.7rem;
       }
 
-      .bodyTypeListFlex, .bodyTypeListFlexMI, .bodyTypeListFlexProteins {
+      .bodyTypeListFlex, .bodyTypeListFlexMI, .bodyTypeListFlexProteins, .bodyTypeListFlexBM {
         display: flex;
       }
 
@@ -493,4 +493,16 @@
       .bodyTypeListFlexBMI img{
         width:500px;
         margin-right:50px;
+      }
+
+      .bodyTypeListBF img{
+        width:800px;
+        margin-left:350px;
+        margin-right:300px;
+        margin-top:50px;
+      }
+
+      .bodyTypeListFlexBM img{
+        margin-right:50px;
+        margin-left:0px;
       }
