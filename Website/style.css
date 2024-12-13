@@ -30,18 +30,13 @@
       }
 
       .logo {
-        font-size: 1.7rem;
         margin-top: 10px;
         margin-left: 50px;
       }
 
-      .logo p {
-        margin-top: -25px;
-        margin-right: 50px;
-        padding-top: 51px;
-        padding-bottom: 36px;
-        padding-left: 50px;
-        padding-right: 30px;
+      .logo img{
+        width:75px;
+        height:60px;
       }
 
       nav ul li {
