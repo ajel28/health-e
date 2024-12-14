@@ -21,7 +21,7 @@
       .headerContainer {
         color: white;
         display: flex;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         background-color: #ff6347;
         width: 100%;
         height: 80px;
@@ -41,8 +41,8 @@
 
       nav ul li {
         display: inline;
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 70px;
+        padding-right: 70px;
         padding-bottom: 32px;
         padding-top: 39px;
       }
@@ -502,4 +502,39 @@
 
       .question input {
         height: 173px;
+      }
+
+      /* START OF PLAYLISTS PAGE */
+      .songs h1:first-child{
+        text-align:center;
+        margin-top:50px;
+      }
+
+      .songs h1{
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .songs iframe{
+        width:40%;
+        margin-left:200px;
+        margin-bottom:20px;
+        margin-right:0px;
+      }
+
+      .spotifyplaylists{
+        display:flex;
+        flex-wrap: wrap;
+      }
+
+      .spotifyright{
+        margin:30px 0px 0px 5px !important;
+        flex-direction: column;
+        height:248px;
+      }
+
+      .spotifyright iframe{
+        margin:0px !important;
+        width:400px;
+        height:100%;
       }
