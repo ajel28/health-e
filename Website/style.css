@@ -381,26 +381,26 @@
 
       /* THIS IS THE BEGINNING OF BODY TYPES */
 
-      .bodyTypesMain h2 {
+      .Main h2 {
         margin-top: 60px;
         margin-left: 40px;
       }
 
-      .bodyTypeHeader {
+      .Header {
         margin: 0px 0px 0px 40px;
       }
 
-      .bodyTypeHeader01 {
+      .Header01 {
         margin-top: 40px;
         margin-left: 40px;
         font-size: 3rem;
       }
 
-      .bodyTypesMain img {
+      .Main img {
         margin-right: 150px;
       }
 
-      .bodyTypesMain p {
+      .Main p {
         margin-left: 80px;
         font-size: 1.1rem;
         margin-right: 90px;
@@ -409,24 +409,24 @@
         margin-top:40px;
       }
 
-      .bodyTypesMain li {
+      .Main li {
         margin-top: 10px;
         margin-left: 60px;
         font-size: 1.7rem;
       }
 
-      .bodyTypeListFlex, .bodyTypeListFlexMI, .bodyTypeListFlexProteins, .bodyTypeListFlexBM {
+      .ListFlex, .ListFlexMI, .ListFlexProteins, .ListFlexBM, .ListFlexBench {
         display: flex;
       }
 
-      .bodyTypeList img{
+      .List img{
         display: flex;
         margin-left: 470px;
         margin-top: 20px;
         width: 500px;
       }
 
-      .bodyTypeListText ul{
+      .ListText ul{
         margin-bottom:40px;
         margin-right:100px;
       }
@@ -438,18 +438,18 @@
         margin-top: 30px;
       }
 
-      .bodyTypesMain a h1 {
+      .Main a h1 {
         color: tomato;
         text-align: center;
         margin-bottom: 40px;
       }
 
-      .bodyTypeListText li{
+      .ListText li{
        font-size:1rem;
        padding:5px;
       }
 
-      .bodyTypeListFlexMI img{
+      .ListFlexMI img{
         margin-right:70px;
         width:550px;
       }
@@ -464,27 +464,27 @@
         box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);
       }
 
-      .bodyTypeListFlexProteins img{
+      .ListFlexProteins img{
         margin-right:0px;
       }
 
-      .bodyTypeListFlexBMI{
+      .ListFlexBMI{
         display: flex;
       }
 
-      .bodyTypeListFlexBMI img{
+      .ListFlexBMI img{
         width:500px;
         margin-right:50px;
       }
 
-      .bodyTypeListBF img{
+      .ListBF img{
         width:800px;
         margin-left:350px;
         margin-right:300px;
         margin-top:50px;
       }
 
-      .bodyTypeListFlexBM img{
+      .ListFlexBM img{
         margin-right:50px;
         margin-left:0px;
       }
@@ -534,4 +534,19 @@
         width:400px;
         height:160px !important;
         max-height: none;
+      }
+
+      /* FOR CHEST HYPERTROPHY + ANY MORE SIMILAR PAGES LIKE  THIS */
+
+      .sets{
+        margin-left:60px;
+        margin-top:10px;
+        color: rgb(94, 94, 94);
+      }
+
+      .ListFlexBench img{
+        margin-right:30px;
+        margin-top:40px;
+        width:400px;
+        height:400px;
       }
