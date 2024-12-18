@@ -415,7 +415,7 @@
         font-size: 1.7rem;
       }
 
-      .ListFlex, .ListFlexMI, .ListFlexProteins, .ListFlexBM, .ListFlexBench {
+      .ListFlex, .ListFlexMI, .ListFlexProteins, .ListFlexBM, .ListFlexChestHyper {
         display: flex;
       }
 
@@ -544,9 +544,9 @@
         color: rgb(94, 94, 94);
       }
 
-      .ListFlexBench img{
+      .ListFlexChestHyper img{
         margin-right:30px;
         margin-top:40px;
-        width:400px;
-        height:400px;
+        width:100%;
+        height:100%;
       }
