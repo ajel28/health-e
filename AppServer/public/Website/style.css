@@ -413,7 +413,7 @@
         font-size: 1.7rem;
       }
 
-      .ListFlex, .ListFlexMI, .ListFlexProteins, .ListFlexBM, .ListFlexChestHyper {
+      .ListFlex, .ListFlexMI, .ListFlexProteins, .ListFlexBM, .ListFlexChestHyper, .ListFlex {
         display: flex;
       }
 
@@ -542,9 +542,15 @@
         color: rgb(94, 94, 94);
       }
 
-      .ListFlexChestHyper img{
+      .ListFlexChestHyper img, .ListFlex img{
         margin-right:30px;
         margin-top:40px;
         width:100%;
         height:100%;
+      }
+
+      .RearDeltFlyes{
+        width:100%;
+        display: flex;
+        align-items: center;
       }
