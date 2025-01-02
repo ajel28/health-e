@@ -41,7 +41,22 @@ app.use(function(err, req, res, next) {
 module.exports = app;
 
 
-// const mysql = require('mysql')
-// const connection = mysql.createConnection({
-//   host: 
-// })
+const mysql = require('mysql')
+const connection = mysql.createConnection({ // filling in these later don't know how to do it
+  host: '',
+  user: '',
+  password: '',
+  database: ''
+})
+
+connection.connect()
+
+connection.query('SELECT name, email, question FROM Question', (err, rows, fields) => {
+  if (err) throw err
+
+  for (let i = 0; i < rows; i++){
+    console.log(rows[i].solution)
+  }
+})
+
+connection.end()
