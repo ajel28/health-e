@@ -487,6 +487,11 @@
         margin-left:0px;
       }
 
+      #dna{
+        width: 500px;
+        height:500px;
+      }
+
       /* FOR ABOUT US PAGE */
       .about {
         display: flex;
