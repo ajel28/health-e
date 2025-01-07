@@ -34,9 +34,9 @@
         margin-left: 50px;
       }
 
-      .logo img{
-        width:75px;
-        height:60px;
+      .logo img {
+        width: 75px;
+        height: 60px;
       }
 
       nav ul li {
@@ -108,37 +108,42 @@
         margin-left: 0px;
         margin-top: 10px;
       }
+
       .signin-container {
         background-color: tomato;
         padding: 20px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        width: 100%; 
+        width: 100%;
         height: 100%;
-    }
-    .signin-container h2 {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .signin-container h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin-bottom: 20px;
-    }
-    .signin-container input[type="email"],
-    .signin-container input[type="password"] {
+      }
+
+      .signin-container input[type="email"],
+      .signin-container input[type="password"] {
         width: 80%;
         padding: 10px;
         margin: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
-    }
-    .signin-container button {
+      }
+
+      .signin-container button {
         width: 100%;
         background-color: #0078d4;
         color: rgb(214, 222, 188);
         border: none;
         border-radius: 4px;
         height: 50px;
-    }
-    .signin-container button:hover {
+      }
+
+      .signin-container button:hover {
         background-color: #005a9e;
         height: 60px;
-    }
+      }
 
       footer {
         padding: 3px;
@@ -231,10 +236,10 @@
       .bodyTypeContainer a {
         color: tomato;
         text-align: center;
-        font-size:1.2rem;
+        font-size: 1.2rem;
       }
 
-      /* START OF HYPERTROPHY INTRO / STRENGTH INTRO */
+      /* START OF HYPERTROPHY INTRO / STRENGTH INTRO / PROGRAMS */
 
       .mainMuscleGroups {
         margin: 40px 0px 0px 40px;
@@ -278,7 +283,16 @@
       .biceps,
       .forearms,
       .legs,
-      .abdominals {
+      .abdominals,
+      .bodybuilding,
+      .strongman,
+      .running,
+      .soccer,
+      .basketball,
+      .football,
+      .wrestling,
+      .swimming,
+      .general {
         background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
         border-radius: 10px;
         width: 100%;
@@ -291,6 +305,44 @@
         position: relative;
         box-shadow: 4px 0px 4px 0px;
         overflow: hidden;
+      }
+
+      .bodybuilding,
+      .strongman,
+      .running,
+      .soccer,
+      .basketball,
+      .football,
+      .wrestling,
+      .swimming,
+      .general{
+        height:200px;
+        width:400px;
+      }
+
+      .bodybuilding p,
+      .strongman p,
+      .running p,
+      .soccer p,
+      .basketball p,
+      .football p,
+      .wrestling p,
+      .swimming p,
+      .general p{
+        margin-top:80px;
+      }
+
+      .diet{
+        background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
+        width:800px;
+        height:200px;
+        border-radius: 10px;
+        padding-top:80px;
+        margin-top:50px;
+      }
+
+      .diet p{
+        font-size: 2rem;
       }
 
       .chest:hover,
@@ -314,7 +366,16 @@
       .biceps::before,
       .forearms::before,
       .legs::before,
-      .abdominals::before {
+      .abdominals::before,
+      .bodybuilding::before,
+      .strongman::before,
+      .soccer::before,
+      .running::before,
+      .basketball::before,
+      .football::before,
+      .wrestling::before,
+      .swimming::before,
+      .general::before {
         z-index: 1;
         content: '';
         position: absolute;
@@ -328,38 +389,45 @@
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/man-training-with-dumbbells-royalty-free-image-1700823785.jpg");
       }
 
-      .triceps {
+      .triceps,
+      .running {
         margin-right: 5%;
         background-image: url("https://prorganiq.com/cdn/shop/articles/medial-tricep-head-exercises.jpg");
       }
 
-      .traps {
+      .traps,
+      .soccer {
         margin-top: 50px;
         background-image: url("https://www.muscletech.com/cdn/shop/articles/MT-Traps-Workout-900x675.jpg?v=1731102659")
       }
 
-      .back {
+      .back,
+      .basketball {
         margin-top: 50px;
         background-image: url("https://media.istockphoto.com/id/1028271392/photo/muscular-man-training-his-back.jpg?s=612x612&w=0&k=20&c=osNOzRBERLXKCG6Ugcr8uOdNBICFnolYixDE8S28M08=");
       }
 
-      .biceps {
+      .biceps,
+      .football {
         margin-top: 50px;
         margin-right: 5%;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/fit-chinese-guy-practicing-with-dumbbells-in-gym-royalty-free-image-1610380612.?crop=0.668xw:1.00xh;0,0&resize=1200:*");
       }
 
-      .forearms {
+      .forearms,
+      .wrestling {
         margin-top: 50px;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/gym-workout-weight-training-bodybuilding-muscular-royalty-free-image-1703160802.jpg?crop=0.88847xw:1xh;center,top&resize=1200:*");
       }
 
-      .legs {
+      .legs,
+      .swimming {
         margin-top: 50px;
         background-image: url("https://hips.hearstapps.com/hmg-prod/images/young-man-training-on-a-leg-machine-in-the-gym-royalty-free-image-1701168283.jpg");
       }
 
-      .abdominals {
+      .abdominals,
+      .general {
         margin-top: 50px;
         margin-right: 5%;
         background-image: url("https://thumbs.dreamstime.com/b/bodybuilder-training-man-crunches-fitness-workout-core-strength-guy-endurance-sports-athlete-abs-muscle-power-health-344022068.jpg");
@@ -404,7 +472,7 @@
         margin-right: 90px;
         margin-bottom: 30px;
         line-height: 2rem;
-        margin-top:40px;
+        margin-top: 40px;
       }
 
       .Main li {
@@ -413,20 +481,25 @@
         font-size: 1.7rem;
       }
 
-      .ListFlex, .ListFlexMI, .ListFlexProteins, .ListFlexBM, .ListFlexChestHyper, .ListFlex {
+      .ListFlex,
+      .ListFlexMI,
+      .ListFlexProteins,
+      .ListFlexBM,
+      .ListFlexChestHyper,
+      .ListFlex {
         display: flex;
       }
 
-      .List img{
+      .List img {
         display: flex;
         margin-left: 470px;
         margin-top: 20px;
         width: 500px;
       }
 
-      .ListText ul{
-        margin-bottom:40px;
-        margin-right:100px;
+      .ListText ul {
+        margin-bottom: 40px;
+        margin-right: 100px;
       }
 
       iframe {
@@ -442,54 +515,54 @@
         margin-bottom: 40px;
       }
 
-      .ListText li{
-       font-size:1rem;
-       padding:5px;
+      .ListText li {
+        font-size: 1rem;
+        padding: 5px;
       }
 
-      .ListFlexMI img{
-        margin-right:70px;
-        width:550px;
+      .ListFlexMI img {
+        margin-right: 70px;
+        width: 550px;
       }
-      
-      .heightImg{
+
+      .heightImg {
         background-color: #f9f9f9;
-        margin-right:400px !important;
-        margin-left:400px !important;
+        margin-right: 400px !important;
+        margin-left: 400px !important;
         border-radius: 20px;
-        padding-left:100px;
-        padding-right:100px;
+        padding-left: 100px;
+        padding-right: 100px;
         box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.1);
       }
 
-      .ListFlexProteins img{
-        margin-right:0px;
+      .ListFlexProteins img {
+        margin-right: 0px;
       }
 
-      .ListFlexBMI{
+      .ListFlexBMI {
         display: flex;
       }
 
-      .ListFlexBMI img{
-        width:500px;
-        margin-right:50px;
-      }
-
-      .ListBF img{
-        width:800px;
-        margin-left:350px;
-        margin-right:300px;
-        margin-top:50px;
-      }
-
-      .ListFlexBM img{
-        margin-right:50px;
-        margin-left:0px;
-      }
-
-      #dna{
+      .ListFlexBMI img {
         width: 500px;
-        height:500px;
+        margin-right: 50px;
+      }
+
+      .ListBF img {
+        width: 800px;
+        margin-left: 350px;
+        margin-right: 300px;
+        margin-top: 50px;
+      }
+
+      .ListFlexBM img {
+        margin-right: 50px;
+        margin-left: 0px;
+      }
+
+      #dna {
+        width: 500px;
+        height: 500px;
       }
 
       /* FOR ABOUT US PAGE */
@@ -504,58 +577,59 @@
       }
 
       /* START OF PLAYLISTS PAGE */
-      .songs h1:first-child{
-        text-align:center;
-        margin-top:50px;
+      .songs h1:first-child {
+        text-align: center;
+        margin-top: 50px;
       }
 
-      .songs h1{
+      .songs h1 {
         text-align: center;
         margin-top: 30px;
       }
 
-      .songs iframe{
-        width:40%;
-        margin-left:200px;
-        margin-bottom:20px;
-        margin-right:0px;
+      .songs iframe {
+        width: 40%;
+        margin-left: 200px;
+        margin-bottom: 20px;
+        margin-right: 0px;
       }
 
-      .spotifyplaylists{
-        display:flex;
+      .spotifyplaylists {
+        display: flex;
         flex-wrap: wrap;
       }
 
-      .spotifyright{
-        margin:70px 0px 0px 5px !important;
+      .spotifyright {
+        margin: 70px 0px 0px 5px !important;
         flex-direction: column;
-        height:248px;
+        height: 248px;
       }
 
-      .spotifyright iframe{
-        margin:0px !important;
-        width:400px;
-        height:160px !important;
+      .spotifyright iframe {
+        margin: 0px !important;
+        width: 400px;
+        height: 160px !important;
         max-height: none;
       }
 
       /* FOR CHEST HYPERTROPHY + ANY MORE SIMILAR PAGES LIKE  THIS */
 
-      .sets{
-        margin-left:60px;
-        margin-top:10px;
+      .sets {
+        margin-left: 60px;
+        margin-top: 10px;
         color: rgb(94, 94, 94);
       }
 
-      .ListFlexChestHyper img, .ListFlex img{
-        margin-right:30px;
-        margin-top:40px;
-        width:100%;
-        height:100%;
+      .ListFlexChestHyper img,
+      .ListFlex img {
+        margin-right: 30px;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
       }
 
-      .RearDeltFlyes{
-        width:100%;
+      .RearDeltFlyes {
+        width: 100%;
         display: flex;
         align-items: center;
       }
