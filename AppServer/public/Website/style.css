@@ -315,9 +315,10 @@
       .football,
       .wrestling,
       .swimming,
-      .general{
-        height:200px;
-        width:400px;
+      .general {
+        height: 200px;
+        width: 400px;
+        position: relative;
       }
 
       .bodybuilding p,
@@ -328,20 +329,60 @@
       .football p,
       .wrestling p,
       .swimming p,
-      .general p{
-        margin-top:80px;
+      .general p {
+        margin-top: 80px;
       }
 
-      .diet{
-        background-image: url("https://www.dmoose.com/cdn/shop/articles/feature-image_664d327f-547e-4e9e-aae3-3e9d651d2cea.jpg?v=1683545606");
-        width:800px;
-        height:200px;
+      .bodybuilding {
+        background-image: url("https://www.dmoose.com/cdn/shop/articles/Main_Image_3.jpg?v=1663944771");
+      }
+
+      .strongman {
+        background-image: url("https://t3.ftcdn.net/jpg/01/44/44/30/360_F_144443074_LNsbu4K0vo1hqfeCyHUxEn3x6DTAYx5j.jpg");
+      }
+
+      .running {
+        background-image: url("https://t3.ftcdn.net/jpg/01/65/71/48/360_F_165714866_P2HiXnR9yOcAxR7F8IxvtlWBCAZvm5j1.jpg") !important;
+      }
+
+      .soccer {
+        background-image: url("https://i0.wp.com/sterlingimageworks.com/wp-content/uploads/2018/03/8SI_0173.jpg?resize=840%2C473&ssl=1") !important;
+      }
+
+      .basketball {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvYdw2afmH7hTwfdcsikGv6rBjwqaZKNP8AA&s") !important;
+        background-position: 50% 50%;
+      }
+
+      .football {
+        background-image: url("https://4e037f6759177f3fda8f-9baaa4c623a22d5224640e7dc009f613.ssl.cf1.rackcdn.com/FootballQuarterback.jpg") !important;
+      }
+
+      .wrestling {
+        background-image: url("https://media.istockphoto.com/id/493736078/photo/freestyle-wrestler-throwing.jpg?s=612x612&w=0&k=20&c=kVVAi12zaVoe7Y-mK_IBY3In2PKuV8hHDr3GUOAl_uA=") !important;
+        background-position: 50% 50%;
+      }
+
+      .swimming {
+        background-image: url("https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg") !important;
+        background-position: 50% 50%;
+      }
+
+      .general {
+        background-image: url("https://img.freepik.com/premium-photo/man-stands-cliff-looking-sunrise-mental-health-concept_27550-3245.jpg") !important;
+      }
+
+      .diet {
+        background-image: url("https://www.morelandobgyn.com/hubfs/Imported_Blog_Media/GettyImages-854725402-1.jpg");
+        width: 800px;
+        height: 200px;
         border-radius: 10px;
-        padding-top:80px;
-        margin-top:50px;
+        padding-top: 80px;
+        margin-top: 50px;
+        background-position: 0% 20%;
       }
 
-      .diet p{
+      .diet p {
         font-size: 2rem;
       }
 
