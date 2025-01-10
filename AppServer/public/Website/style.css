@@ -701,10 +701,18 @@
         margin-bottom:40px;
       }
 
-      #arnoldProgram{
+      #davidProgram{
         background-color: rgb(255, 225, 225);
       }
 
       #davidImg img{
         width:280px;
+      }
+
+      #jeffImg img{
+        width:376px;
+      }
+
+      #jeffProgram{
+        background-color: #eeeeee;
       }
