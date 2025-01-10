@@ -702,5 +702,9 @@
       }
 
       #arnoldProgram{
-        background-color: rgb(237, 237, 237);
+        background-color: rgb(255, 225, 225);
+      }
+
+      #davidImg img{
+        width:280px;
       }
