@@ -710,25 +710,58 @@
       }
 
       #jeffImg img{
-        width:376px;
+        width:365px;
       }
 
       #jeffProgram{
         background-color: #eeeeee;
       }
 
-      #bodyPros img{
-        width:390px;
+      #Pros img{
+        width:360px;
       }
 
       #bodyProsProgram{
-        background-color: rgb(210, 255, 210);
+        background-color: rgb(230, 253, 230);
       }
 
-      #bodyConsProgram{
+      #bodyConsProgram, #strongmanConsProgram{
         background-color: lightblue;
+      }
+
+      #strongmanConsProgram p{
+        font-size: 0.95rem;
       }
 
       #bodyConsProgram p{
         font-size: 0.85rem;
       }
+
+      #whatStrongman img{
+        width: 280px;
+      }
+
+      #whatStrongmanProgram{
+        background-color: rgb(216, 200, 200);
+      }
+
+      #strongmanImg img{
+        width:300px;
+      }
+
+      #strongmanProgram{
+        background-color: rgb(255, 217, 217);
+      }
+
+      #strongmanCompositionProgram{
+        background-color: rgb(237, 237, 237);
+      }
+
+      #strongmanCompositionProgram p{
+        font-size: 0.9rem;
+      }
+
+      #strongmanProsProgram p{
+        font-size:0.9rem;
+      }
+
