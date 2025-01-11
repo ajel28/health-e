@@ -716,3 +716,19 @@
       #jeffProgram{
         background-color: #eeeeee;
       }
+
+      #bodyPros img{
+        width:390px;
+      }
+
+      #bodyProsProgram{
+        background-color: rgb(210, 255, 210);
+      }
+
+      #bodyConsProgram{
+        background-color: lightblue;
+      }
+
+      #bodyConsProgram p{
+        font-size: 0.85rem;
+      }
