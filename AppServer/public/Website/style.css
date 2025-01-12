@@ -764,3 +764,49 @@
         font-size:0.9rem;
       }
 
+      #whatRunning img{
+        width:340px;
+      }
+
+      #whatRunningProgram{
+        background-color: rgb(208, 217, 220);
+      }
+
+      #runningSplit p{
+        font-size:1.8rem;
+      }
+
+      #runningSplit{
+        background-color: rgb(234, 255, 248);
+      }
+
+      #boltimg img{
+        width: 300px;
+      }
+
+      #boltProgram{
+        background-color: rgb(252, 255, 225);
+      }
+
+      #boltProgram p{
+        font-size:0.9rem;
+      }
+
+      #whatSoccerProgram{
+        background-color: rgb(199, 241, 255);
+      }
+
+      #bayern img{
+        width:360px;
+      }
+
+      #soccerSplit{
+        background-color: rgb(255, 212, 212);
+      }
+
+      #messiProgram{
+         background-color: rgb(201, 192, 192);
+      }
+
+
+
