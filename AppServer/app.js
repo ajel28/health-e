@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var connection = require('./database/db_connection')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -37,5 +38,17 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.get('/response', (req, res) => {
+  res.send('hello');
+})
+
+app.listen(3000, () => {
+  console.log('Server is running on port 3000')
+  connection.connect((err) => {
+    if (err) throw err;
+    console.log('Database connected!');
+  })
+})
 
 module.exports = app;
