@@ -1,27 +1,33 @@
 const db = require("./db_connection")
 
-// printing possible queries needed
+// query for all submissions
+export function getSubmissions(){
+    const [result] = db.query("SELECT * FROM question")
+    return result
+}
 
-// all submissions in the database
-const db_submissions_sql = "SELECT * FROM question"
+// query for a specific submission
+export function getSubmission(id){
+    const [result] = db.query(`
+        SELECT *
+        FROM questions
+        WHERE question_id = ?
+        `, [id])
+        return result[0]
+}
 
-db.query(db_submissions_sql, (error, result) => {
-    if (error) throw error;
+// query for all submissions with a question
+export function getQuestions(){
+    const [result] = db.query(`
+        SELECT *
+        FROM questions
+        WHERE question IS NOT NULL
+        OR LENGTH(question) > 0
+        `)
+    return result
+}
 
-    console.log(result);
-});
+const responses = getSubmissions()
+console.log(responses)
 
-// submissions in the database that have a question
-const db_questions_sql = `
-SELECT name, email, question
-FROM *
-WHERE question IS NOT NULL
-`;
-
-db.query(db_questions_sql, (error, result) => {
-    if (error) throw error;
-
-    console.log(result);
-});
-
-db.end();
+db.end()

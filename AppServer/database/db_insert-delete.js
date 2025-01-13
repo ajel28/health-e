@@ -1,13 +1,22 @@
 const db = require("./db_connection")
 
-// insert stuff
-const db_insert_sql = `
-INSERT INTO question (name, email, question)
-VALUES (?, ?, ?)
-`;
+// query for inserting a submission
+export function createSubmission(name, email, question){
+    const result = db.query(`
+        INSERT INTO question (name, email, question)
+        VALUES (?, ?, ?)
+        `, [name, email, question])
+    return result
+}
 
-const db_delete_sql = `
-DELETE FROM question
-WHERE question = 'test'
-`
-db.end()
+// query for deleting a submission
+export function deleteSubmission(question){
+    const result = db.query(`
+        DELETE FROM question
+        WHERE question = ?
+        `, [question])
+    return result
+}
+
+const responses = createSubmission()
+console.log(responses)

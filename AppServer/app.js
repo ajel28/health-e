@@ -7,6 +7,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+import { getSubmissions, getSubmission, getQuestions } from './database/db_print.js';
+import { createSubmission, deleteSubmission } from './database/db_insert-delete.js';
+
 var app = express();
 var connection = require('./database/db_connection')
 
@@ -39,8 +42,15 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.get('/response', (req, res) => {
-  res.send('hello');
+app.get('/responses', (req, res) => {
+  const responses = getSubmissions()
+  res.send(responses);
+})
+
+app.post("/responses", (req, res) => {
+  const { name, email, question } = req.body
+  const response = createSubmission(name, email, question)
+  res.send(response)
 })
 
 app.listen(3000, () => {
