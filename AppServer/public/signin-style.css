@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/Website/img/ArnoldSignIn.jpg) no-repeat;
+    background: url(ArnoldSignIn.jpg) no-repeat;
     background-size:cover;
     background-position: center;
 }   

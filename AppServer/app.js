@@ -22,14 +22,21 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/start.html")
 });
 
-
 app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/public/aboutus.html")
 });
 
+app.get("/anatomy", (req, res) => {
+  res.sendFile(__dirname + "/public/anatomy.html")
+})
+
 app.get("/contact", (req, res) => {
   res.sendFile(__dirname + "/public/contacts.html")
 });
+
+app.get("/response", (req, res) => {
+  res.sendFile(__dirname + "/public/responses.html")
+})
 
 const contact_query = `INSERT INTO question (name, email, question) VALUES (?, ?, ?);`
 
@@ -44,19 +51,13 @@ app.post("/contact", (req, res) => {
 
 const submission_query = "SELECT * FROM question"
 
-app.get('/responses', (req, res) => {
+app.get('/submission', (req, res) => {
   connection.execute(submission_query, (error, results) => {
     if (error) console.log(error);
     else {
       res.send(results);
     }
   })
-})
-
-app.post("/responses", (req, res) => {
-  const { name, email, question } = req.body
-  const response = createSubmission(name, email, question)
-  res.send(response)
 })
 
 app.listen(3000, () => {
