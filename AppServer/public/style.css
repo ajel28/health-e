@@ -865,5 +865,73 @@
         background-color: rgb(255, 221, 221);
       }
 
+      #whatWrestling img{
+        width: 480px;
+      }
+
+      #whatWrestlingProgram{
+        background-color: #9db4c6;
+      }
+
+      #wrestlingSplit img{
+        width:300px;
+      }
+
+      #wrestlingSplitText{
+        background-color: #d4e1ea;
+      }
+
+      #whatCalisthenicProgram{
+        background-color: rgb(219, 186, 186);
+      }
+
+      #calisthenicsSplit img{
+        width:440px;
+      }
+
+      #calisthenicsSplitText{
+        background-color: #e4f4ff;
+      }
+
+      #calisthenicsCompText{
+        background-color: rgb(212, 212, 212);
+      }
+
+      #calisthenicsCompText p{
+        font-size: 0.9rem;
+      }
+
+      #generalComp img{
+        width:300px;
+      }
+
+      #generalCompText{
+        background-color: rgb(244, 255, 224);
+      }
+
+      #dietImg img{
+        width:370px;
+      }
+
+      #dietProgram{
+        background-color: rgb(185, 169, 153);
+      }
+
+      #dietProgram p{
+        font-size: 0.9rem;
+      }
+
+      #maintainProgram{
+        background-color: rgb(252, 252, 218);
+      }
+
+      #dietCut{
+        background-color: rgb(255, 236, 205);
+      }
+
+      #dietCut p{
+        font-size: 0.9rem;
+      }
+
 
 
