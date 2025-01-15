@@ -42,10 +42,6 @@ app.get("/pal", (req, res) => {
   res.sendFile(__dirname + "/public/pal.html")
 })
 
-app.get("/pal", (req, res) => {
-  res.sendFile(__dirname + "/public/pal.html")
-})
-
 app.get("/response", (req, res) => {
   res.sendFile(__dirname + "/public/responses.html")
 })
