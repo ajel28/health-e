@@ -50,18 +50,6 @@ app.get("/register", (req, res) => {
   res.sendFile(__dirname + "/public/register.html")
 })
 
-const register_query  = "INSERT INTO user (user_id, password) VALUES (?,?) ";
-
-app.post("/register", (req, res)=> {
-  console.log(req)
-  connection.execute(register_query, [req.body.username, req.body.password], (error, results) => {
-    if(error) console.log(error)
-    else {
-      res.redirect("/login");
-    }
-  })
-})
-
 app.get("/anatomy/hypertrophyintro/abshyper", (req, res) => {
   res.sendFile(__dirname + "abshyper.html")
 })
@@ -222,9 +210,16 @@ app.get("/programs/diet", (req, res) => {
   res.sendFile(__dirname + "diet.html")
 })
 
+const register_query  = "INSERT INTO user (username, password) VALUES (?,?) ";
 
-
-
+app.post("/register", (req, res)=> {
+  connection.execute(register_query, [req.body.username, req.body.password], (error, results) => {
+    if(error) console.log(error)
+    else {
+      res.redirect("/register");
+    }
+  })
+})
 
 const contact_query = `INSERT INTO question (name, email, question) VALUES (?, ?, ?);`
 
