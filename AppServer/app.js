@@ -30,9 +30,21 @@ app.get("/anatomy", (req, res) => {
   res.sendFile(__dirname + "/public/anatomy.html")
 })
 
+app.get("/playlist", (req, res) => {
+  res.sendFile(__dirname + "/public/playlist.html")
+})
+
 app.get("/contact", (req, res) => {
   res.sendFile(__dirname + "/public/contacts.html")
 });
+
+app.get("/pal", (req, res) => {
+  res.sendFile(__dirname + "/public/pal.html")
+})
+
+app.get("/pal", (req, res) => {
+  res.sendFile(__dirname + "/public/pal.html")
+})
 
 app.get("/response", (req, res) => {
   res.sendFile(__dirname + "/public/responses.html")
@@ -53,6 +65,170 @@ app.post("/register", (req, res)=> {
     }
   })
 })
+
+
+
+
+app.get("/anatomy/hypertrophyintro/abshyper.html", (req, res) => {
+  res.sendFile(__dirname + "abshyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/bicephyper.html", (req, res) => {
+  res.sendFile(__dirname + "bicephyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/chesthyper.html", (req, res) => {
+  res.sendFile(__dirname + "chesthyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/forearmhyper.html", (req, res) => {
+  res.sendFile(__dirname + "forearmhyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/legshyper.html", (req, res) => {
+  res.sendFile(__dirname + "legshyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/trapshyper.html", (req, res) => {
+  res.sendFile(__dirname + "trapshyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/tricephyper.html", (req, res) => {
+  res.sendFile(__dirname + "tricephyper.html")
+})
+
+app.get("/anatomy/hypertrophyintro/backhyper.html", (req, res) => {
+  res.sendFile(__dirname + "backhyper.html")
+})
+
+app.get("/anatomy/enduranceintro/absendurance.html", (req, res) => {
+  res.sendFile(__dirname + "absendurance.html")
+})
+
+app.get("/anatomy/enduranceintro/bicependurance.html", (req, res) => {
+  res.sendFile(__dirname + "bicependurance.html")
+})
+
+app.get("/anatomy/enduranceintro/trapsendurance.html", (req, res) => {
+  res.sendFile(__dirname + "trapsendurance.html")
+})
+
+app.get("/anatomy/enduranceintro/tricependurance.html", (req, res) => {
+  res.sendFile(__dirname + "tricependurance.html")
+})
+
+app.get("/anatomy/enduranceintro/absendurance.html", (req, res) => {
+  res.sendFile(__dirname + "absendurance.html")
+})
+
+app.get("/anatomy/enduranceintro/legsendurance.html", (req, res) => {
+  res.sendFile(__dirname + "legsendurance.html")
+})
+
+app.get("/anatomy/enduranceintro/forearmendurance.html", (req, res) => {
+  res.sendFile(__dirname + "forearmendurance.html")
+})
+
+app.get("/anatomy/enduranceintro/chestendurance.html", (req, res) => {
+  res.sendFile(__dirname + "chestendurance.html")
+})
+
+app.get("/anatomy/enduranceintro/shoulderendurance.html", (req, res) => {
+  res.sendFile(__dirname + "shoulderendurance.html")
+})
+
+app.get("/anatomy/strengthintro/shoulderstrength.html", (req, res) => {
+  res.sendFile(__dirname + "shoulderstrength.html")
+})
+
+app.get("/anatomy/strengthintro/absstrength.html", (req, res) => {
+  res.sendFile(__dirname + "absstrength.html")
+})
+
+app.get("/anatomy/strengthintro/legsstrength.html", (req, res) => {
+  res.sendFile(__dirname + "legsstrength.html")
+})
+
+app.get("/anatomy/strengthintro/cheststrength.html", (req, res) => {
+  res.sendFile(__dirname + "cheststrength.html")
+})
+
+app.get("/anatomy/strengthintro/forearmstrength.html", (req, res) => {
+  res.sendFile(__dirname + "forearmstrength.html")
+})
+
+app.get("/anatomy/strengthintro/trapsstrength.html", (req, res) => {
+  res.sendFile(__dirname + "trapsstrength.html")
+})
+
+app.get("/anatomy/strengthintro/bicepstrength.html", (req, res) => {
+  res.sendFile(__dirname + "bicepstrength.html")
+})
+
+app.get("/anatomy/strengthintro/tricepstrength.html", (req, res) => {
+  res.sendFile(__dirname + "tricepstrength.html")
+})
+
+app.get("/anatomy/strengthintro/backstrength.html", (req, res) => {
+  res.sendFile(__dirname + "backstrength.html")
+})
+
+app.get("/anatomy/bodtypecontfactor.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypecontfactor.html")
+})
+
+app.get("/anatomy/bodtypemyths.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypemyths.html")
+})
+
+app.get("/anatomy/bodtypemeasures.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypemeasures.html")
+})
+
+app.get("/anatomy/bodtypegenes.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypegenes.html")
+})
+
+app.get("/programs/bodybuilding.html", (req, res) => {
+  res.sendFile(__dirname + "bodybuilding.html")
+})
+
+app.get("/programs/soccer.html", (req, res) => {
+  res.sendFile(__dirname + "soccer.html")
+})
+
+app.get("/programs/strongman.html", (req, res) => {
+  res.sendFile(__dirname + "strongman.html")
+})
+
+app.get("/programs/running.html", (req, res) => {
+  res.sendFile(__dirname + "running.html")
+})
+
+app.get("/programs/basketball.html", (req, res) => {
+  res.sendFile(__dirname + "basketball.html")
+})
+
+app.get("/programs/football.html", (req, res) => {
+  res.sendFile(__dirname + "football.html")
+})
+
+app.get("/programs/wrestling.html", (req, res) => {
+  res.sendFile(__dirname + "wrestling.html")
+})
+
+app.get("/programs/calisthenics.html", (req, res) => {
+  res.sendFile(__dirname + "calisthenics.html")
+})
+
+app.get("/programs/general.html", (req, res) => {
+  res.sendFile(_dirname + "general.html")
+})
+
+app.get("/programs/diet.html", (req, res) => {
+  res.sendFile(__dirname + "diet.html")
+})
+
 
 
 
