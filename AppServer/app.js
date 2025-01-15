@@ -4,53 +4,60 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
-import { getSubmissions, getSubmission, getQuestions } from './database/db_print.js';
-import { createSubmission, deleteSubmission } from './database/db_insert-delete.js';
-
 var app = express();
-var connection = require('./database/db_connection')
+var connection = require('./database/db_connection');
+const { error } = require('console');
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('views', path.join(__dirname, 'public'));
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + "/public/img"));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/start.html")
 });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/public/aboutus.html")
 });
 
-app.get('/responses', (req, res) => {
-  const responses = getSubmissions()
-  res.send(responses);
+app.get("/anatomy", (req, res) => {
+  res.sendFile(__dirname + "/public/anatomy.html")
 })
 
-app.post("/responses", (req, res) => {
-  const { name, email, question } = req.body
-  const response = createSubmission(name, email, question)
-  res.send(response)
+app.get("/contact", (req, res) => {
+  res.sendFile(__dirname + "/public/contacts.html")
+});
+
+app.get("/response", (req, res) => {
+  res.sendFile(__dirname + "/public/responses.html")
+})
+
+const contact_query = `INSERT INTO question (name, email, question) VALUES (?, ?, ?);`
+
+app.post("/contact", (req, res) => {
+  connection.execute(contact_query, [req.body.name, req.body.email, req.body.question], (error, results) => {
+    if(error) console.log(error)
+    else {
+      res.redirect("/contact");
+    }
+  })
+})
+
+const submission_query = "SELECT * FROM question"
+
+app.get('/submission', (req, res) => {
+  connection.execute(submission_query, (error, results) => {
+    if (error) console.log(error);
+    else {
+      res.send(results);
+    }
+  })
 })
 
 app.listen(3000, () => {
