@@ -1,0 +1,24 @@
+/* Ensure the body and html elements fill the whole screen */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the iframe, set to full viewport size */
+  .webchat-container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
