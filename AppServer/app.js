@@ -30,6 +30,10 @@ app.get("/anatomy", (req, res) => {
   res.sendFile(__dirname + "/public/anatomy.html")
 })
 
+app.get("/playlist", (req, res) => {
+  res.sendFile(__dirname + "/public/playlist.html")
+})
+
 app.get("/contact", (req, res) => {
   res.sendFile(__dirname + "/public/contacts.html")
 });
@@ -46,109 +50,169 @@ app.get("/response", (req, res) => {
   res.sendFile(__dirname + "/public/responses.html")
 })
 
-app.get("/abshyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/abshyper.html")
+app.get("/anatomy/hypertrophyintro/abshyper.html", (req, res) => {
+  res.sendFile(__dirname + "abshyper.html")
 })
 
-app.get("/bicephyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/bicephyper.html")
+app.get("/anatomy/hypertrophyintro/bicephyper.html", (req, res) => {
+  res.sendFile(__dirname + "bicephyper.html")
 })
 
-app.get("/chesthyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/chesthyper.html")
+app.get("/anatomy/hypertrophyintro/chesthyper.html", (req, res) => {
+  res.sendFile(__dirname + "chesthyper.html")
 })
 
-app.get("/forearmhyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/forearmhyper.html")
+app.get("/anatomy/hypertrophyintro/forearmhyper.html", (req, res) => {
+  res.sendFile(__dirname + "forearmhyper.html")
 })
 
-app.get("/legshyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/legshyper.html")
+app.get("/anatomy/hypertrophyintro/legshyper.html", (req, res) => {
+  res.sendFile(__dirname + "legshyper.html")
 })
 
-app.get("/trapshyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/trapshyper.html")
+app.get("/anatomy/hypertrophyintro/trapshyper.html", (req, res) => {
+  res.sendFile(__dirname + "trapshyper.html")
 })
 
-app.get("/tricephyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/tricephyper.html")
+app.get("/anatomy/hypertrophyintro/tricephyper.html", (req, res) => {
+  res.sendFile(__dirname + "tricephyper.html")
 })
 
-app.get("/backhyper", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/hypertrophyintro/backhyper.html")
+app.get("/anatomy/hypertrophyintro/backhyper.html", (req, res) => {
+  res.sendFile(__dirname + "backhyper.html")
 })
 
-app.get("/absendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/absendurance.html")
+app.get("/anatomy/enduranceintro/absendurance.html", (req, res) => {
+  res.sendFile(__dirname + "absendurance.html")
 })
 
-app.get("/bicependurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/bicependurance.html")
+app.get("/anatomy/enduranceintro/bicependurance.html", (req, res) => {
+  res.sendFile(__dirname + "bicependurance.html")
 })
 
-app.get("/trapsendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/trapsendurance.html")
+app.get("/anatomy/enduranceintro/trapsendurance.html", (req, res) => {
+  res.sendFile(__dirname + "trapsendurance.html")
 })
 
-app.get("/tricependurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/tricepndurance.html")
+app.get("/anatomy/enduranceintro/tricependurance.html", (req, res) => {
+  res.sendFile(__dirname + "tricependurance.html")
 })
 
-app.get("/absendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/absendurance.html")
+app.get("/anatomy/enduranceintro/absendurance.html", (req, res) => {
+  res.sendFile(__dirname + "absendurance.html")
 })
 
-app.get("/legsendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/legsendurance.html")
+app.get("/anatomy/enduranceintro/legsendurance.html", (req, res) => {
+  res.sendFile(__dirname + "legsendurance.html")
 })
 
-app.get("/forearmendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/forearmendurance.html")
+app.get("/anatomy/enduranceintro/forearmendurance.html", (req, res) => {
+  res.sendFile(__dirname + "forearmendurance.html")
 })
 
-app.get("/chestendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/chestendurance.html")
+app.get("/anatomy/enduranceintro/chestendurance.html", (req, res) => {
+  res.sendFile(__dirname + "chestendurance.html")
 })
 
-app.get("/shoulderendurance", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/enduranceintro/shoulderendurance.html")
+app.get("/anatomy/enduranceintro/shoulderendurance.html", (req, res) => {
+  res.sendFile(__dirname + "shoulderendurance.html")
 })
 
-app.get("/shoulderstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/shoulderstrength.html")
+app.get("/anatomy/strengthintro/shoulderstrength.html", (req, res) => {
+  res.sendFile(__dirname + "shoulderstrength.html")
 })
 
-app.get("/absstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/absstrength.html")
+app.get("/anatomy/strengthintro/absstrength.html", (req, res) => {
+  res.sendFile(__dirname + "absstrength.html")
 })
 
-app.get("/legsstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/legsstrength.html")
+app.get("/anatomy/strengthintro/legsstrength.html", (req, res) => {
+  res.sendFile(__dirname + "legsstrength.html")
 })
 
-app.get("/cheststrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/cheststrength.html")
+app.get("/anatomy/strengthintro/cheststrength.html", (req, res) => {
+  res.sendFile(__dirname + "cheststrength.html")
 })
 
-app.get("/forearmstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/forearmstrength.html")
+app.get("/anatomy/strengthintro/forearmstrength.html", (req, res) => {
+  res.sendFile(__dirname + "forearmstrength.html")
 })
 
-app.get("/trapsstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/trapsstrength.html")
+app.get("/anatomy/strengthintro/trapsstrength.html", (req, res) => {
+  res.sendFile(__dirname + "trapsstrength.html")
 })
 
-app.get("/bicepstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/bicepstrength.html")
+app.get("/anatomy/strengthintro/bicepstrength.html", (req, res) => {
+  res.sendFile(__dirname + "bicepstrength.html")
 })
 
-app.get("/tricepstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/tricepstrength.html")
+app.get("/anatomy/strengthintro/tricepstrength.html", (req, res) => {
+  res.sendFile(__dirname + "tricepstrength.html")
 })
 
-app.get("/backstrength", (req, res) => {
-  res.sendFile(__dirname + "/anatomy/strengthintro/backstrength.html")
+app.get("/anatomy/strengthintro/backstrength.html", (req, res) => {
+  res.sendFile(__dirname + "backstrength.html")
 })
+
+app.get("/anatomy/bodtypecontfactor.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypecontfactor.html")
+})
+
+app.get("/anatomy/bodtypemyths.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypemyths.html")
+})
+
+app.get("/anatomy/bodtypemeasures.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypemeasures.html")
+})
+
+app.get("/anatomy/bodtypegenes.html", (req, res) => {
+  res.sendFile(__dirname + "bodytypegenes.html")
+})
+
+app.get("/programs/bodybuilding.html", (req, res) => {
+  res.sendFile(__dirname + "bodybuilding.html")
+})
+
+app.get("/programs/soccer.html", (req, res) => {
+  res.sendFile(__dirname + "soccer.html")
+})
+
+app.get("/programs/strongman.html", (req, res) => {
+  res.sendFile(__dirname + "strongman.html")
+})
+
+app.get("/programs/running.html", (req, res) => {
+  res.sendFile(__dirname + "running.html")
+})
+
+app.get("/programs/basketball.html", (req, res) => {
+  res.sendFile(__dirname + "basketball.html")
+})
+
+app.get("/programs/football.html", (req, res) => {
+  res.sendFile(__dirname + "football.html")
+})
+
+app.get("/programs/wrestling.html", (req, res) => {
+  res.sendFile(__dirname + "wrestling.html")
+})
+
+app.get("/programs/calisthenics.html", (req, res) => {
+  res.sendFile(__dirname + "calisthenics.html")
+})
+
+app.get("/programs/general.html", (req, res) => {
+  res.sendFile(_dirname + "general.html")
+})
+
+app.get("/programs/diet.html", (req, res) => {
+  res.sendFile(__dirname + "diet.html")
+})
+
+
+
+
 
 const contact_query = `INSERT INTO question (name, email, question) VALUES (?, ?, ?);`
 
